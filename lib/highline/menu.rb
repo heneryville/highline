@@ -187,7 +187,6 @@ class HighLine
     #   end
 
     def choice( name, help = nil, text = nil, &action )
-      puts "Choice #{name} #{help} #{text}"
       item = Menu::Item.new(name, text: text, help: help, action: action)
       @items << item
       @help.merge!(item.item_help)
