@@ -19,7 +19,6 @@ class HighLine
         @text = attributes[:text] || @name
         @help = attributes[:help]
         @action = attributes[:action]
-        puts "Making an item with #{@name} #{@text}"
       end
 
       def item_help
